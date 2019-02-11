@@ -168,7 +168,7 @@ public class PathMenu: UIView {
         if timer == nil {
             timer = Timer.scheduledTimer(timeInterval: Double(timeOffset), target: self, selector: selector, userInfo: nil, repeats: true)
             if let timer = timer {
-                RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)
+                RunLoop.current.add(timer, forMode: RunLoop.Mode.common)
             }
         }
     }
